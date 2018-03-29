@@ -84,7 +84,7 @@ class TrackpadActivity : AppCompatActivity() {
 
         if (event.action == MotionEvent.ACTION_DOWN)  buffer[0] = TOUCH_START
 
-        Log.i("INFO", "Sending data: ${buffer[0]};${buff.int};${buff.int}")
+        Log.i("INFO", "Sending data: ${"0x%02X".format(buffer[0])};${buff.int};${buff.int}")
         thread {
             client?.Write(buffer)
         }
