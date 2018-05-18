@@ -13,7 +13,7 @@ data class TCPData (val ip:String, val port:Int): Parcelable
 
 class TCPClient(IP:String, port:Int) {
 
-    val sock = Socket(IP, port)
+    private val sock = Socket(IP, port)
 
     fun Read():ByteArray {
         val buffer = ByteArray(8)

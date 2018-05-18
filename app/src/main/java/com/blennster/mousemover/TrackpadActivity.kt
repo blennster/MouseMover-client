@@ -10,11 +10,11 @@ import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.concurrent.thread
 
-val MOVE_MOUSE:Byte = 0x00
-val TOUCH_START:Byte = 0x01
-val LEFT_DOWN:Byte = 0x03
-val LEFT_UP:Byte = 0x04
-val RIGHT_CLICK:Byte = 0x05
+const val MOVE_MOUSE:Byte = 0x00
+const val TOUCH_START:Byte = 0x01
+const val LEFT_DOWN:Byte = 0x03
+const val LEFT_UP:Byte = 0x04
+const val RIGHT_CLICK:Byte = 0x05
 
 class TrackpadActivity : AppCompatActivity() {
 
